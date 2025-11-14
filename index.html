@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Redirecionando...</title>
+
+    <meta http-equiv="refresh" content="5;url=https://www.mercadolivre.com.br/social/ebfdhegac14943/lists/4e874ef5-07e9-4181-a9eb-f820f83ac423?matt_tool=33702750&forceInApp=true&skipInApp=true">
+
+</head>
+
+<body>
+
+    <h1>Processando seu pedido...</h1>
+
+    <p>Você será redirecionado para o WhatsApp em uma nova aba e, em seguida, para a loja do Mercado Livre. Se nada acontecer, clique nos links abaixo.</p>
+
+
+
+    <a id="whatsapp-link" href="https://wa.me/5521979934676?text=Ola%20vim%20do%20anuncio%20e%20quero%20o%20link%20da%20loja" target="_blank">Abrir WhatsApp</a><br>
+
+    <a id="mercadolivre-link" href="https://www.mercadolivre.com.br/social/ebfdhegac14943/lists/4e874ef5-07e9-4181-a9eb-f820f83ac423?matt_tool=33702750&forceInApp=true&skipInApp=true" target="_blank">Abrir Loja</a>
+
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            var whatsappLink = "https://wa.me/5521979934676?text=Ola%20vim%20do%20anuncio%20e%20quero%20o%20link%20da%20loja";
+
+            // CORRIGIDO: Uso de aspas duplas padrão (")
+
+            var mlLink = "https://www.mercadolivre.com.br/social/ebfdhegac14943/lists/4e874ef5-07e9-4181-a9eb-f820f83ac423?matt_tool=33702750&forceInApp=true&skipInApp=true"; 
+
+
+
+            // 1. Abre o WhatsApp em uma nova aba
+
+            window.open(whatsappLink, '_blank');
+
+
+
+            // 2. Abre o link do Mercado Livre após um pequeno atraso
+
+            setTimeout(function() {
+
+                window.location.href = mlLink;
+
+            }, 2000); // 2 segundos (2000 milissegundos) de atraso
+
+        });
+
+    </script>
+
+</body>
+
+</html>
