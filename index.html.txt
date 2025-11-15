@@ -1,0 +1,29 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var whatsappLink = "https://wa.me/5521979934676?text=Ola%20vim%20do%20anuncio%20e%20quero%20o%20link%20da%20loja";
+        var mlLink = "https://www.mercadolivre.com.br/social/ebfdhegac14943/lists/4e874ef5-07e9-4181-a9eb-f820f83ac423?matt_tool=33702750&forceInApp=true&skipInApp=true"; 
+        
+        // --- CÓDIGO DE ATRASO ALEATÓRIO ---
+        
+        // Define o intervalo mínimo e máximo em milissegundos (1000ms a 2000ms)
+        var minDelay = 1000; // 1.0 segundo
+        var maxDelay = 2000; // 2.0 segundos
+
+        // Calcula um atraso aleatório dentro do intervalo
+        // Math.random() retorna um número entre 0 e 1
+        var randomDelay = Math.floor(Math.random() * (maxDelay - minDelay + 1)) + minDelay;
+        
+        console.log("Tempo de atraso gerado: " + randomDelay + "ms"); // Você pode remover esta linha após o teste.
+
+        // --- FIM DO CÓDIGO DE ATRASO ALEATÓRIO ---
+
+
+        // 1. Abre o WhatsApp em uma nova aba
+        window.open(whatsappLink, '_blank');
+
+        // 2. Redireciona a aba atual para o Mercado Livre após o atraso aleatório
+        setTimeout(function() {
+            window.location.href = mlLink;
+        }, randomDelay); 
+    });
+</script>
